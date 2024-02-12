@@ -1,0 +1,2 @@
+# Whether factories will produce illegal stacks. An illegal stack manager such as StackResize (https://www.spigotmc.org/resources/%E2%AD%90-stackresize-%E2%AD%90.102376/) is recommended but not required if enabled.
+AllowIllegalStacks: true

@@ -1,0 +1,156 @@
+# All recipes are located here.
+# Valid Conditions fields are MUSHROOM, COMPOSTABLE, WOOL, PLANKS
+Stew Barrel:
+  Recipes:
+    Beetroot Soup:
+      Input:
+        - BEETROOT,3
+        - BOWL,1
+      Output:
+        - BEETROOT_SOUP,1
+      Fuel: 1
+    Rabbit Stew:
+      Input:
+        - COOKED_RABBIT,1
+        - CARROT,1
+        - BOWL,2
+      Conditions:
+        - MUSHROOM,1
+      Output:
+        - RABBIT_STEW,2
+      Fuel: 1
+    Mushroom Stew:
+      Input:
+        - RED_MUSHROOM,1
+        - BROWN_MUSHROOM,1
+        - BOWL,2
+      Output:
+        - MUSHROOM_STEW,2
+      Fuel: 1
+Hot Composter:
+  Recipes:
+    Compost:
+      Conditions:
+        - Compostable,6
+      Output:
+        - BONE_MEAL,1
+      Fuel: 1
+Tannery:
+  Recipes:
+    Name Tag:
+      Input:
+        - STRING,1
+        - INK_SAC,1
+        - IRON_INGOT,1
+        - LEATHER,1
+        - FEATHER,1
+        - PAPER,1
+      Output:
+        - NAME_TAG,1
+      Fuel: 8
+    Saddle:
+      Input:
+        - LEATHER,5
+        - IRON_INGOT,1
+      Output:
+        - SADDLE,1
+      Fuel: 16
+    Leather Armor:
+      Input:
+        - LEATHER,12
+      Output:
+        - LEATHER_HELMET,1
+        - LEATHER_CHESTPLATE,1
+        - LEATHER_LEGGINGS,1
+        - LEATHER_BOOTS,1
+      Fuel: 24
+Smithy:
+  Recipes:
+    Chainmail Armor:
+      Input:
+        - CHAIN,12
+      Output:
+        - CHAINMAIL_HELMET,1
+        - CHAINMAIL_CHESTPLATE,1
+        - CHAINMAIL_LEGGINGS,1
+        - CHAINMAIL_BOOTS,1
+      Fuel: 24
+    Trident:
+      Input:
+        - DIAMOND,2
+        - PRISMARINE_SHARD,2
+        - IRON_INGOT,3
+      Output:
+        - TRIDENT,1
+      Fuel: 30
+    Diamond Horse Armor:
+      Input:
+        - DIAMOND,6
+        - LEATHER,1
+      Output:
+        - DIAMOND_HORSE_ARMOR,1
+      Fuel: 36
+    Golden Horse Armor:
+      Input:
+        - GOLD_INGOT,6
+        - LEATHER,1
+      Output:
+        - GOLDEN_HORSE_ARMOR,1
+      Fuel: 36
+    Iron Horse Armor:
+      Input:
+        - IRON_INGOT,6
+        - LEATHER,1
+      Output:
+        - IRON_HORSE_ARMOR,1
+      Fuel: 36
+Spectral Forge:
+  Recipes:
+    Netherite Template:
+      Input:
+        - NETHERITE_INGOT,8
+        - DIAMOND_BLOCK,1
+      Output:
+        - NETHERITE_UPGRADE_SMITHING_TEMPLATE,1
+      Fuel: 1200
+    Elytra:
+      Input:
+        - DRAGON_EGG,1
+        - NETHERITE_INGOT,6
+        - PHANTOM_MEMBRANE,6
+      Output:
+        - ELYTRA,1
+        - DRAGON_EGG,1
+      Fuel: 1500
+    Heart of the Sea:
+      Input:
+        - SEA_LANTERN,8
+        - DIAMOND,1
+      Output:
+        - HEART_OF_THE_SEA,1
+      Fuel: 150
+Alchemy Station:
+  Recipes:
+    Synthetic Blaze Powder:
+      Input:
+        - GUNPOWDER,1
+        - REDSTONE,1
+      Output:
+        - BLAZE_POWDER,1
+      Fuel: 16
+    Sponge:
+      Input:
+        - SLIME_BALL,1
+      Conditions:
+        - WOOL,8
+      Output:
+        - SPONGE,2
+      Fuel: 24
+    Synthetic Dragon's Breath:
+      Input:
+        - HONEY_BOTTLE,1
+        - BLAZE_POWDER,1
+        - GUNPOWDER,1
+      Output:
+        - DRAGON_BREATH,1
+      Fuel: 32
